@@ -33,3 +33,14 @@ plugins: [
 If fingerprinting, it would be a good idea to use 'clean-webpack-plugin' to clean the build directory, as these uniquely stamped fingerprinted files will accumulate.
 
 ####TODO: it would be useful to be able to pull in large svg files into a template or index.html at build time.
+
+####To run:
+
+```
+npm install
+
+npm run build
+```
+
+
+in another terminal tab:  npm run start
