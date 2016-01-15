@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Basic App</title>
+<link href="style-92517be38f8438b52adb.css" rel="stylesheet"></head>
+<body>
+<div>custom text from webpack config</div>
+<div class="svg-button">
+    <svg id="playbtn" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65">
+        <defs>
+            <style>
+                .cls-2 {
+                    fill: #f05046;
+                    stroke: #f05046;
+                    stroke-width: 0.5px;
+                    fill-rule: evenodd;
+                }
+
+                .circle {
+                    fill: #fff;
+                    stroke: #f05046;
+                    stroke-width: 2px;
+                }
+            </style>
+        </defs>
+        <title>playPauseButton</title>
+        <g id="play-btn">
+            <g id="circle">
+                <path class="circle" d="M32.5,2A30.5,30.5,0,1,1,2,32.5,30.53,30.53,0,0,1,32.5,2Z"/>
+            </g>
+            <polygon id="left" class="cls-2" points="23,19 32,24 32,43 23,47">
+                <animate id="playToPauseLeft" begin="indefinite" fill="freeze" attributeName="points" dur="150ms"
+                         to="21,19 30,19 30,47 21,47"/>
+                <animate id="pauseToPlayLeft" begin="indefinite" fill="freeze" attributeName="points" dur="150ms"
+                         to="23,19 32,24 32,43 23,47"/>
+            </polygon>
+            <polygon id="right" class="cls-2" points="32,24 51,34.1 51,34.1 32,43">
+                <animate id="playToPauseRight" begin="indefinite" fill="freeze" attributeName="points" dur="150ms"
+                         to="35,19 44,19 44,47 35,47"/>
+                <animate id="pauseToPlayRight" begin="indefinite" fill="freeze" attributeName="points" dur="150ms"
+                         to="32,24 51,34.1 51,34.1 32,43"/>
+            </polygon>
+        </g>
+    </svg>
+</div>
+<script src="bundle-92517be38f8438b52adb.js"></script></body>
+</html>
+
+
