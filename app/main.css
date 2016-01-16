@@ -3,7 +3,9 @@ body {
 }
 
 .foo {
-    color: #2e2e2e;
+    background: url(assets/png-image.png) no-repeat;
+    width: 281px;
+    height: 281px;
 }
 
 .svg-button {

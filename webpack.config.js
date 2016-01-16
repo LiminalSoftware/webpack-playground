@@ -22,6 +22,11 @@ module.exports = {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
         include: PATHS.app
+      },
+      {
+        test: /\.png$/,
+        loader: "url-loader?mimetype=image/png",
+        include: PATHS.app
       }
     ]
   },
